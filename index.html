@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- JQuery -->
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  </head>
+  <body>
+    <title>Ecommerce - Agencia de viajes</title>
+
+    <header>
+      <div class="header-1">
+        <div class="menu">
+          <i class="fas fa-bars only-mobile" id="barra"></i>
+          <ul class="menu-toogle" id="menu-toogle">
+            <li>
+              <a href="">Vuelos <i class="fas fa-sort-down"></i></a>
+            </li>
+            <li>
+              <a href="">Paquetes <i class="fas fa-sort-down"></i></a>
+            </li>
+            <li>
+              <a href="">Alojamiento <i class="fas fa-sort-down"></i></a>
+            </li>
+            <li>
+              <a href="">Actividades <i class="fas fa-sort-down"></i></a>
+            </li>
+            <li>
+              <a href="">Traslado <i class="fas fa-sort-down"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="logo">
+          <i class="fas fa-plane img-logo" id="img-logo"></i>
+          <a href="index.html" class="only-desktop" for="img-logo">Travelper</a>
+        </div>
+        <div class="hola">
+          <div class="buscador">
+            <input
+              type="text"
+              placeholder="Buscar"
+              class="input-buscador"
+              id="input-buscador"
+            />
+          </div>
+          <i class="fas fa-search only-desktop" id="buscar"></i>
+          <i class="fas fa-cart-plus"></i>
+          <a class="only-desktop btn-cuenta" href="#" id="usuario"
+            ><i class="far fa-user"></i
+            ><label for="usuario">Mi cuenta</label></a
+          >
+        </div>
+      </div>
+      <div class="header-2 only-mobile">
+        <div class="buscador">
+          <input type="text" placeholder="Buscar" />
+          <i class="fas fa-search"></i>
+        </div>
+      </div>
+    </header>
+    <!-- FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/abb362e998.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
