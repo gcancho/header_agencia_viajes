@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="avion.png" />
     <!-- JQuery -->
-    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-  </head>
-  <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
     <title>Ecommerce - Agencia de viajes</title>
+  </head>
 
+  <body>
+    <!-- Header -->
     <header>
       <div class="header-1">
         <div class="menu">
@@ -29,15 +31,15 @@
               <a href="">Actividades <i class="fas fa-sort-down"></i></a>
             </li>
             <li>
-              <a href="">Traslado <i class="fas fa-sort-down"></i></a>
+              <a href="">Traslados <i class="fas fa-sort-down"></i></a>
             </li>
           </ul>
         </div>
-        <div class="logo">
-          <i class="fas fa-plane img-logo" id="img-logo"></i>
-          <a href="index.html" class="only-desktop" for="img-logo">Travelper</a>
-        </div>
-        <div class="hola">
+        <a class="logo" href="index.html" id="img-logo">
+          <i class="fas fa-plane img-logo"></i>
+          <label class="only-desktop" for="img-logo">Travelper</label>
+        </a>
+        <div class="contenedor-derecho">
           <div class="buscador">
             <input
               type="text"
@@ -47,8 +49,8 @@
             />
           </div>
           <i class="fas fa-search only-desktop" id="buscar"></i>
-          <i class="fas fa-cart-plus"></i>
-          <a class="only-desktop btn-cuenta" href="#" id="usuario"
+          <i class="fas fa-cart-plus" id="icon-carrito"></i>
+          <a class="only-desktop btn-cuenta" href="#" id="icon-cuenta"
             ><i class="far fa-user"></i
             ><label for="usuario">Mi cuenta</label></a
           >
@@ -61,11 +63,26 @@
         </div>
       </div>
     </header>
+
+    <!-- Modals -->
+    <div class="modal-carrito" id="modal1">
+      <h1>Mi carrito de compras</h1>
+    </div>
+    <div class="modal-cuenta" id="modal2">
+      <h1>Mi cuenta</h1>
+    </div>
+
     <!-- FontAwesome -->
     <script
       src="https://kit.fontawesome.com/abb362e998.js"
       crossorigin="anonymous"
     ></script>
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"
+    />
     <script src="script.js"></script>
   </body>
 </html>
